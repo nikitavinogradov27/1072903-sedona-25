@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nikita Nikita](https://up.htmlacademy.ru/htmlcss/25/user/1072903).
-* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
+* Наставник: [Егор @ Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
