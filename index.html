@@ -20,26 +20,21 @@
         </nav>
     </header>
 <main class="container">
-    <!--<img src="img/index_logo.svg" width="459" height="353" alt="Добро пожаловать в Седону">-->
     <h1 class="visually-hidden">Седона</h1>
     <p>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</p>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <section class="reasons">
-        <h2 class="visually-hidden">Причины</h2>
-        <ul>
-            <li class="reasons-item">
-                <h3>Настоящий городок</h3>
-                <span>— №1 —</span>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-        </ul>
+    <h2 class="visually-hidden">Причины</h2>
+    <section class="reasons_item_town">
+        <h3>Настоящий городок</h3>
+        <span>— №1 —</span>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <img src="img/first_picture.jpg" width="800" height="256" alt="first_picture">
     </section>
     <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
             <li class="feature-item">
-
                 <h3>Жильё</h3>
                 <img src="img/icon_home.svg" width="75" height="72" alt="Домик">
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -56,81 +51,77 @@
             </li>
         </ul>
     </section>
-    <section class="reasons">
-        <ul>
-            <li class="reasons-item">
-                <h3>Мост дьявола</h3>
-                <span>— №2 —</span>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </li>
-            <li class="reasons-item">
-                <h3>Небольшая площадь</h3>
-                <span>— №3 —</span>
-                <p>Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="reasons-item">
-                <h3>Красивая дорога</h3>
-                <span>— №4 —</span>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="reasons-item">
-                <h3>Мало туристов</h3>
-                <span>— №5 —</span>
-                <p>Большинство едет в гранд каньон и толпится там</p>
-            </li>
-        </ul>
-        <!--есть смысл в спан????-->
-        <span>
-            <img src="img/first_picture.jpg" width="800" height="256" alt="first_picture">
-            <img src="img/second_picture.jpg" width="800" height="256" alt="second_picture">
-      </span>
+    <section class="reasons_item_bridge">
+        <h3>Мост дьявола</h3>
+        <span>— №2 —</span>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <img src="img/second_picture.jpg" width="800" height="256" alt="second_picture">
     </section>
-
+    <section class="reasons_item_square">
+        <h3>Небольшая площадь</h3>
+        <span>— №3 —</span>
+        <p>Все достопримечательности находятся очень близко</p>
+    </section>
+    <section class="reasons_item_road">
+        <h3>Красивая дорога</h3>
+        <span>— №4 —</span>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    </section>
+    <section class="reasons_item_tourist">
+        <h3>Мало туристов</h3>
+        <span>— №5 —</span>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+    </section>
+    </section>
     <section class="Search">
         <h2 class="visually-hidden">Поиск</h2>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-
         <!-- Здесь будет форма -->
-        <h3>поиск гостиницы в Седоне</h3>
-            <ul class="Search-list">
-                <li class="Search-item">
-                  <p>Дата заезда:</p>
-                  <!--/-->
-                </li>
-                <li class="Search-item">
-                  <p>Дата выезда:</p>
-                  <!--/-->
-                </li>
-                <li class="Search-item">
-                  <p>Взрослые:</p>
-                  <!--/-->
-                </li>
-                </li>
-                <li class="Search-item">
-                  <p>Дети:</p>
-                <!--/-->
-                </li>
-            </ul>
-        <a class="button" href="Search.html">Найти</a>
+        <form action="/echo" method="post">
+            <h3>Поиск гостиницы в Седоне</h3>
+            <div class="data_arrival">
+                <lable>Дата заезда:<input type="text" name="data_arrival"></label>
+            </div>
+            <div class="data_departure">
+                <lable>Дата выезда:<input type="text" name="data_departure"></label>
+            </div>
+            <div class="people">
+                <lable>Взрослые:<input type="text" name="adults"></label>
+                <div class="number_adults">
+                    <button type="button" name="button_minus">-</button>
+                    <input type="number" name="number_adults">
+                    <button type="button" name="button_plus">+</button>
+                </div>
+                <lable>Дети:<input type="text" name="children"></label>
+                <div class="number_children">
+                    <button type="button" name="button_minus">-</button>
+                    <input type="number" name="number_children">
+                    <button type="button" name="button_plus">+</button>
+                </div>
+            </div>
+            <!-- Кнопка -->
+            <button type="submit" class="button_search">Найти</button>
+        </form>
     </section>
-    <!--
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Карта</h2>
-        <span class="modal-close">x</span>
-    </section>-->
 </main>
-    <footer class="main-footer">
-        <p class="footer-hashtag">#visitSedona</p>
-        <div class="footer-social">
-            <a class="social-button" href="#">Вконтакте</a>
-            <a class="social-button" href="#">Фейсбук</a>
-            <a class="social-button" href="#">Инстаграм</a>
+    <footer class="main_footer">
+        <p class="footer_hashtag">#visitSedona</p>
+        <div class="footer_social">
+            <a class="social_button" href="#">Твиттер
+                <img src="img/icon_tw.svg" width="17" height="15" alt="icon_tw">
+            </a>
+            <a class="social_button" href="#">Фейсбук
+                <img src="img/icon_fb.svg" width="12" height="22" alt="icon_fb">
+            </a>
+            <a class="social_button" href="#">Ютуб
+                <img src="img/icon_youtube.svg" width="20" height="16" alt="icon_youtube">
+            </a>
         </div>
         <p class="footer-copyright">
             <b>Website by</b>
-            <a class="button" href="https://htmlacademy.ru">
+            <a class="button" href="https://htmlacademy.ru">html academy
                 <img src="img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy">
             </a>
         </p>
