@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    </head>
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-
-            <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto_video.html">Фото и видео</a></li>
-                <li><a class="main-header-logo">
-                    <img src="img/logo.svg" width="140" height="72" alt="Логотип «Седона»"></a>
-                </li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="main_header">
+    <nav class="main_navigation">
+        <ul class="site_navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="foto_video.html">Фото и видео</a></li>
+            <li><a class="main_header_logo">
+                <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
+            </li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+    </nav>
+</header>
 <main class="container">
-    <h1 class="visually-hidden">Седона</h1>
+    <h1 class="visually_hidden">Седона</h1>
     <p>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</p>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <h2 class="visually-hidden">Причины</h2>
+    <h2 class="visually_hidden">Причины</h2>
     <section class="reasons_item_town">
         <h3>Настоящий городок</h3>
         <span>— №1 —</span>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/first_picture.jpg" width="800" height="256" alt="first_picture">
+        <img src="img/first_picture.jpg" width="800" height="256" alt="Первое фото">
     </section>
     <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="features-list">
-            <li class="feature-item">
+        <h2 class="visually_hidden">Преимущества</h2>
+        <ul class="features_list">
+            <li class="feature_item">
                 <h3>Жильё</h3>
-                <img src="img/icon_home.svg" width="75" height="72" alt="Домик">
+                <img src="img/icon_home.svg" width="75" height="72" alt="Иконка домика">
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature_item">
                 <h3>Еда</h3>
-                <img src="img/icon_mac.svg" width="75" height="72" alt="Гамбургер">
+                <img src="img/icon_mac.svg" width="75" height="72" alt="Иконка гамбургера">
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature_item">
                 <h3>Сувениры</h3>
-                <img src="img/icon_present.svg" width="75" height="72" alt="Подарок">
+                <img src="img/icon_present.svg" width="75" height="72" alt="Иконка подарока">
                 <p>Не только китайского, но и местного производства!</p>
             </li>
         </ul>
@@ -55,7 +57,7 @@
         <h3>Мост дьявола</h3>
         <span>— №2 —</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <img src="img/second_picture.jpg" width="800" height="256" alt="second_picture">
+        <img src="img/second_picture.jpg" width="800" height="256" alt="Второе фото">
     </section>
     <section class="reasons_item_square">
         <h3>Небольшая площадь</h3>
@@ -72,9 +74,8 @@
         <span>— №5 —</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
     </section>
-    </section>
-    <section class="Search">
-        <h2 class="visually-hidden">Поиск</h2>
+    <section class="search">
+        <h2 class="visually_hidden">Поиск</h2>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -90,15 +91,15 @@
             <div class="people">
                 <lable>Взрослые:<input type="text" name="adults"></label>
                 <div class="number_adults">
-                    <button type="button" name="button_minus">-</button>
+                    <button type="button" name="button_minus">Уменьшить</button>
                     <input type="number" name="number_adults">
-                    <button type="button" name="button_plus">+</button>
+                    <button type="button" name="button_plus">Увеличить</button>
                 </div>
                 <lable>Дети:<input type="text" name="children"></label>
                 <div class="number_children">
-                    <button type="button" name="button_minus">-</button>
+                    <button type="button" name="button_minus">Уменьшить</button>
                     <input type="number" name="number_children">
-                    <button type="button" name="button_plus">+</button>
+                    <button type="button" name="button_plus">Увеличить</button>
                 </div>
             </div>
             <!-- Кнопка -->
@@ -106,25 +107,26 @@
         </form>
     </section>
 </main>
-    <footer class="main_footer">
-        <p class="footer_hashtag">#visitSedona</p>
-        <div class="footer_social">
-            <a class="social_button" href="#">Твиттер
-                <img src="img/icon_tw.svg" width="17" height="15" alt="icon_tw">
-            </a>
-            <a class="social_button" href="#">Фейсбук
-                <img src="img/icon_fb.svg" width="12" height="22" alt="icon_fb">
-            </a>
-            <a class="social_button" href="#">Ютуб
-                <img src="img/icon_youtube.svg" width="20" height="16" alt="icon_youtube">
-            </a>
-        </div>
-        <p class="footer-copyright">
-            <b>Website by</b>
-            <a class="button" href="https://htmlacademy.ru">html academy
-                <img src="img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy">
-            </a>
-        </p>
-    </footer>
+<!-- футер  -->
+<footer class="main_footer">
+    <p class="footer_hashtag">#visitSedona</p>
+    <div class="footer_social">
+        <a class="social_button" href="#">Твиттер
+            <img src="img/icon_tw.svg" width="17" height="15" alt="Седона в твиттер">
+        </a>
+        <a class="social_button" href="#">Фейсбук
+            <img src="img/icon_fb.svg" width="12" height="22" alt="Седона в фейсбук">
+        </a>
+        <a class="social_button" href="#">Ютуб
+            <img src="img/icon_youtube.svg" width="20" height="16" alt="Седона в ютуб">
+        </a>
+    </div>
+    <p class="footer_copyright">
+        <b>Website by</b>
+        <a class="button" href="https://htmlacademy.ru">html academy
+            <img src="img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy">
+        </a>
+    </p>
+</footer>
 </body>
 </html>

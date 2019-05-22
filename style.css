@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/welcome.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
