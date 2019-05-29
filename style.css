@@ -1,16 +1,209 @@
+
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  font-family: PTSans-Bold, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
 
-  background-color: #ffffff;
-  background-image: url("img/welcome.svg");
+    background-color: #ffffff;
+    background-image: url("img/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+/* меню */
+.main_navigation {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+
+}
+a {
+    text-decoration: none;
+}
+p{
+    font-size: 14px;
+    line-height: 26px;
+    color:#333333;
+}
+/* пункты меню*/
+.site_navigation{
+    list-style: none;
+}
+
+.site_navigation a{
+    color: #000000;
+}
+
+.site_navigation li:hover,
+.site_navigation li:focus{
+    background-color: #edc497;
+}
+/* преимущества*/
+h3{
+    font-size: 21px;
+    line-height: 21px;
+}
+.introduction h3{
+    margin-top: 625px;
+    line-height: 1.24;
+}
+.visually_hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+}
+
+
+
+
+
+
+
+/* стили сетки и все про сетку */
+html,
+body {
+  min-width: 1200px;
+  min-height: 1750px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*  флекс для хедкра*/
+.main_header{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+/*  флекс для хедкра для пунктов меню*/
+.site_navigation {
+ display: flex;
+ flex-direction: row;
+ width: auto;
+
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.site_navigation li{
+ width: 240px;
+ background-color: #ffffff;
+}
+
+.introduction_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 440px;
+    margin-top: 625px;
+    font-size: 21px;
+  /* background-image: url("img/polygon.svg");
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.features_list{
+    display: flex;
+    flex-direction:row;
+    width: auto;
+    min-height: 330px;
+    list-style: none;
+}
+
+.reasons_item{
+  display: flex;
+  flex-direction:row;
+}
+.feature_item{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+.feature_item img{
+  order: -1;
+}
+/* выравнивание для бургер домика подарка */
+.feature_item:nth-of-type(1) p{
+  margin-left: 73px;
+  margin-right: 75px;
+}
+.feature_item:nth-of-type(2) p{
+  margin-left: 52px;
+  margin-right: 58px;
+}
+.feature_item:nth-of-type(3) p{
+  margin-left: 64px;
+  margin-right: 63px;
+}
+
+/* для трех серых блоков */
+    /* для главного в котором есть 3 */
+.reasons_item_gray{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.flex_text{
+    width: 400px;
+    height: 256px;
+}
+
+.flex_text.blue{  background-color: #81b3d2;}
+.flex_text.gray{  background-color: #eeeeee;}
+
+/* окошко поиска*/
+.search{
+  display: flex;
+  flex-direction:column;
+
+
+}
+.main_footer {
+   padding: 60px 0;
+   margin-top: 65px;
+}
+.main_footer{
+  display: flex;
+  flex-direction:row;
+}
+.footer_hashtag{
+  width: 400px;
+  margin: 0;
+  margin-left: auto;
+
+}
+.footer_social {
+  width: 400px;
+}
+.footer_copyright {
+  width: 400px;
+  margin: 0;
+  margin-left: auto;
 }

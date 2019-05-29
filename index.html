@@ -4,13 +4,17 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
 <body>
+  <!--  -->
+  <!--  -->
+
 <header class="main_header">
-    <nav class="main_navigation">
-        <ul class="site_navigation">
+    <nav class="main_navigation"> <!-- элемент  header container-->
+
+          <ul class="site_navigation"> <!-- элемент  site_navigation container-->
             <li><a href="info.html">Информация</a></li>
             <li><a href="foto_video.html">Фото и видео</a></li>
             <li><a class="main_header_logo">
@@ -18,62 +22,95 @@
             </li>
             <li><a href="map.html">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+          </ul>
+
     </nav>
 </header>
-<main class="container">
-    <h1 class="visually_hidden">Седона</h1>
-    <p>Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+<main class="container">  <!-- это вход во flex -->
+<!--  1 элемент container-->
+    <div class="introduction_flex">
+        <h2 class="visually_hidden">Седона</h2>
+        <h3>Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</h3>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+
     <h2 class="visually_hidden">Причины</h2>
-    <section class="reasons_item_town">
-        <h3>Настоящий городок</h3>
-        <span>— №1 —</span>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/first_picture.jpg" width="800" height="256" alt="Первое фото">
+<!--  2 элемент container-->
+    <section class="reasons_item town">
+        <div class="flex_text blue">
+            <h3>Настоящий городок</h3>
+            <span>— №1 —</span>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div>
+            <img src="img/first_picture.jpg" width="800" height="256" alt="Первое фото">
+        </div>
     </section>
+<!--  3 элемент container-->
     <section class="features">
         <h2 class="visually_hidden">Преимущества</h2>
         <ul class="features_list">
+
             <li class="feature_item">
                 <h3>Жильё</h3>
                 <img src="img/icon_home.svg" width="75" height="72" alt="Иконка домика">
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="feature_item">
+
+            <li class="feature_item ">
                 <h3>Еда</h3>
                 <img src="img/icon_mac.svg" width="75" height="72" alt="Иконка гамбургера">
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="feature_item">
+
+            <li class="feature_item ">
                 <h3>Сувениры</h3>
                 <img src="img/icon_present.svg" width="75" height="72" alt="Иконка подарока">
                 <p>Не только китайского, но и местного производства!</p>
             </li>
+
         </ul>
     </section>
-    <section class="reasons_item_bridge">
-        <h3>Мост дьявола</h3>
-        <span>— №2 —</span>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <img src="img/second_picture.jpg" width="800" height="256" alt="Второе фото">
+<!--  4 элемент container-->
+    <section class="reasons_item bridge">
+        <div class="flex_text blue">
+            <h3>Мост дьявола</h3>
+            <span>— №2 —</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <div>
+            <img src="img/second_picture.jpg" width="800" height="256" alt="Второе фото">
+        </div>
     </section>
-    <section class="reasons_item_square">
+  <!--  5 элемент container-->
+  <div class="reasons_item_gray">
+    <section class="reasons_item square">
+      <div class="flex_text gray">
         <h3>Небольшая площадь</h3>
         <span>— №3 —</span>
         <p>Все достопримечательности находятся очень близко</p>
+      </div>
     </section>
-    <section class="reasons_item_road">
+    <section class="reasons_item road">
+      <div class="flex_text gray">
         <h3>Красивая дорога</h3>
         <span>— №4 —</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
     </section>
-    <section class="reasons_item_tourist">
+
+    <section class="reasons_item tourist">
+      <div class="flex_text gray">
         <h3>Мало туристов</h3>
         <span>— №5 —</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
+      </div>
     </section>
+  </div>
+
+
+       <!--  6 элемент container-->
     <section class="search">
         <h2 class="visually_hidden">Поиск</h2>
         <h3>Заинтересовались?</h3>
@@ -106,9 +143,10 @@
             <button type="submit" class="button_search">Найти</button>
         </form>
     </section>
+
 </main>
 <!-- футер  -->
-<footer class="main_footer">
+<footer class="main_footer container">
     <p class="footer_hashtag">#visitSedona</p>
     <div class="footer_social">
         <a class="social_button" href="#">Твиттер
@@ -127,6 +165,7 @@
             <img src="img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy">
         </a>
     </p>
+
 </footer>
 </body>
 </html>
