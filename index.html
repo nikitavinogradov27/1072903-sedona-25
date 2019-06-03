@@ -13,25 +13,30 @@
 
 <header class="main_header">
     <nav class="main_navigation"> <!-- элемент  header container-->
-
-          <ul class="site_navigation"> <!-- элемент  site_navigation container-->
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="foto_video.html">Фото и видео</a></li>
-            <li><a class="main_header_logo">
-                <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
-            </li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-
+        <div class="main_navigation_wrapper">
+        <div class="container">
+            <ul class="site_navigation"> <!-- элемент  site_navigation container-->
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="foto_video.html">Фото и видео</a></li>
+                <li><a class="main_header_logo">
+                    <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
+                </li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+       </div>
+       <div class="welcome">
+       </div>
+       </div>
     </nav>
 </header>
+
 <main class="container">  <!-- это вход во flex -->
 <!--  1 элемент container-->
     <div class="introduction_flex">
         <h2 class="visually_hidden">Седона</h2>
-        <h3>Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</h3>
+        <h3>Седона — небольшой городок в Аризоне, </br>
+        заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
@@ -48,25 +53,26 @@
         </div>
     </section>
 <!--  3 элемент container-->
-    <section class="features">
+    <section class="reasons_item features">
         <h2 class="visually_hidden">Преимущества</h2>
+
         <ul class="features_list">
 
             <li class="feature_item">
                 <h3>Жильё</h3>
-                <img src="img/icon_home.svg" width="75" height="72" alt="Иконка домика">
+                <!-- <img src="img/icon_home.svg" width="75" height="72" alt="Иконка домика"> -->
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
 
-            <li class="feature_item ">
+            <li class="feature_item">
                 <h3>Еда</h3>
-                <img src="img/icon_mac.svg" width="75" height="72" alt="Иконка гамбургера">
+                <!-- <img src="img/icon_mac.svg" width="75" height="72" alt="Иконка гамбургера"> -->
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
 
-            <li class="feature_item ">
+            <li class="feature_item">
                 <h3>Сувениры</h3>
-                <img src="img/icon_present.svg" width="75" height="72" alt="Иконка подарока">
+                <!-- <img src="img/icon_present.svg" width="75" height="72" alt="Иконка подарока"> -->
                 <p>Не только китайского, но и местного производства!</p>
             </li>
 
@@ -84,15 +90,15 @@
         </div>
     </section>
   <!--  5 элемент container-->
-  <div class="reasons_item_gray">
-    <section class="reasons_item square">
+  <div class="reasons_item gray">
+    <section class="reasons_item_square">
       <div class="flex_text gray">
         <h3>Небольшая площадь</h3>
         <span>— №3 —</span>
         <p>Все достопримечательности находятся очень близко</p>
       </div>
     </section>
-    <section class="reasons_item road">
+    <section class="reasons_item_road">
       <div class="flex_text gray">
         <h3>Красивая дорога</h3>
         <span>— №4 —</span>
@@ -100,7 +106,7 @@
       </div>
     </section>
 
-    <section class="reasons_item tourist">
+    <section class="reasons_item_tourist">
       <div class="flex_text gray">
         <h3>Мало туристов</h3>
         <span>— №5 —</span>
@@ -109,15 +115,17 @@
     </section>
   </div>
 
-
        <!--  6 элемент container-->
     <section class="search">
+      <div class="search_flex">
         <h2 class="visually_hidden">Поиск</h2>
         <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки,
+        <p>Укажите предполагаемые даты поездки,</br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <!-- Здесь будет форма -->
-        <form action="/echo" method="post">
+      </div>
+      <div class="search_flex_form">
+        <form action="https://echo.htmlacademy.ru" method="post">
             <h3>Поиск гостиницы в Седоне</h3>
             <div class="data_arrival">
                 <lable>Дата заезда:<input type="text" name="data_arrival"></label>
@@ -142,6 +150,7 @@
             <!-- Кнопка -->
             <button type="submit" class="button_search">Найти</button>
         </form>
+      </div>
     </section>
 
 </main>

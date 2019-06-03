@@ -11,34 +11,20 @@ body {
     text-align: center;
 
     background-color: #ffffff;
-    background-image: url("img/background.jpg");
+    background-image:
+    url("img/background.jpg");
+
     background-position: top center;
     background-repeat: no-repeat;
 }
 /* меню */
-.main_navigation {
-    font-size: 16px;
-    line-height: 26px;
-    color: #000000;
 
-}
-a {
-    text-decoration: none;
-}
+ .main_navigation a{text-decoration: none;}
 p{
     font-size: 14px;
     line-height: 26px;
     color:#333333;
 }
-/* пункты меню*/
-.site_navigation{
-    list-style: none;
-}
-
-.site_navigation a{
-    color: #000000;
-}
-
 .site_navigation li:hover,
 .site_navigation li:focus{
     background-color: #edc497;
@@ -63,94 +49,111 @@ h3{
 	overflow: hidden;
 }
 
-
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 1200px;
-}
-
-
-
-
-
-
-
 /* стили сетки и все про сетку */
 html,
 body {
   min-width: 1200px;
   min-height: 1750px;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-/*  флекс для хедкра*/
+
+/*   хедкр сам является блоком*/
 .main_header{
+    margin-bottom: 60px;
+}
+.main_navigation{
+    /* сделали флексом по колоннам */
+    display: flex;
+    flex-direction: column;
+    /* выоавнивание по побочной оси */
+    align-items: center;
+
+    margin-bottom: 800px;
+
+    /* параметры для текста */
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: transparent;
+}
+.main_navigation_wrapper {
+  width: 100%;
+  background-color: white;
+
+}
+
+.main_navigation_wrapper .container{
   display: flex;
-  flex-direction:column;
-  align-items: center;
+  justify-content: space-between;
 }
-/*  флекс для хедкра для пунктов меню*/
+
+.site_navigation{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 .site_navigation {
- display: flex;
- flex-direction: row;
- width: auto;
+  /*  делаем флекс для пунктов меню, в одной строке*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1200px;
+    /* не знаю как, не задавать высоту */
+    height: 56px;
+    background-color: #ffffff;
 
- margin: 0;
- padding: 0;
- list-style: none;
+}
+/*  как делать отступы логотипу?*/
+.site_navigation .main_header_logo{
+  padding: 0;
+}
+.site_navigation a{
+    display: block;
+    padding:16px 72px;
+
+    vertical-align: middle;
+    color: #000000;
 }
 
-.site_navigation li{
- width: 240px;
- background-color: #ffffff;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
+
 
 .introduction_flex{
+    margin: 0;
+    padding: 0;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
-    width: 440px;
-    margin-top: 625px;
     font-size: 21px;
-  /* background-image: url("img/polygon.svg");
-  background-position: top center;
-  background-repeat: no-repeat; */
+    margin-bottom: 56px;
+}
+
+.reasons_item{
+    display: flex;
+    justify-content: space-between;
+}
+.reasons_item.town{
+    margin-bottom: 164px;
 }
 
 .features_list{
     display: flex;
-    flex-direction:row;
-    width: auto;
-    min-height: 330px;
+    justify-content: space-between;
     list-style: none;
 }
 
-.reasons_item{
-  display: flex;
-  flex-direction:row;
-}
-.feature_item{
-  display: flex;
-  flex-direction:column;
-  justify-content: space-around;
-  align-items: center;
 
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-}
-.feature_item img{
-  order: -1;
-}
 /* выравнивание для бургер домика подарка */
-.feature_item:nth-of-type(1) p{
+/* .feature_item:nth-of-type(1) p{
   margin-left: 73px;
   margin-right: 75px;
 }
@@ -161,8 +164,10 @@ body {
 .feature_item:nth-of-type(3) p{
   margin-left: 64px;
   margin-right: 63px;
+} */
+.reasons_item.bridge{
+  flex-direction:row-reverse;
 }
-
 /* для трех серых блоков */
     /* для главного в котором есть 3 */
 .reasons_item_gray{
@@ -175,7 +180,7 @@ body {
     height: 256px;
 }
 
-.flex_text.blue{  background-color: #81b3d2;}
+.flex_text.blue{  background-color: #81b3d2; color:white;}
 .flex_text.gray{  background-color: #eeeeee;}
 
 /* окошко поиска*/
@@ -183,8 +188,27 @@ body {
   display: flex;
   flex-direction:column;
 
+}
+.search_flex{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  font-size: 21px;
+  margin-bottom: 56px;
 
 }
+.search_flex_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .main_footer {
    padding: 60px 0;
    margin-top: 65px;
