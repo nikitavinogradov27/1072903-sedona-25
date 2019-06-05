@@ -4,83 +4,73 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
 <body>
   <!--  -->
-  <!--  -->
-
 <header class="main_header">
     <nav class="main_navigation"> <!-- элемент  header container-->
-        <div class="main_navigation_wrapper">
-        <div class="container">
-            <ul class="site_navigation"> <!-- элемент  site_navigation container-->
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto_video.html">Фото и видео</a></li>
-                <li><a class="main_header_logo">
-                    <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
-                </li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
-            </ul>
-       </div>
-       <div class="welcome">
-       </div>
-       </div>
+      <div class="container">
+        <ul class="site_navigation"> <!-- элемент  site_navigation container-->
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="foto_video.html">Фото и видео</a></li>
+            <li><a class="main_header_logo"></a></li>
+                <!-- <div class="imgege"><img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></div> -->
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
 </header>
 
 <main class="container">  <!-- это вход во flex -->
 <!--  1 элемент container-->
     <div class="introduction_flex">
-        <h2 class="visually_hidden">Седона</h2>
-        <h3>Седона — небольшой городок в Аризоне, </br>
-        заслуживающий большего!</h3>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="introduction_flex_block">
+            <h2 class="visually_hidden">Седона</h2>
+            <h3>Седона — небольшой городок в Аризоне, </br>
+            заслуживающий большего!</h3>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
     </div>
-
     <h2 class="visually_hidden">Причины</h2>
 <!--  2 элемент container-->
-    <section class="reasons_item town">
-        <div class="flex_text blue">
-            <h3>Настоящий городок</h3>
+    <section class="reasons_item reasons_item_town">
+
+        <div class="flex_text flex_text_blue">
+            <h3>Настоящий</br> городок</h3>
             <span>— №1 —</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p>Седона — не аттракцион для туристов,</br> там течёт своя жизнь</p>
         </div>
         <div>
             <img src="img/first_picture.jpg" width="800" height="256" alt="Первое фото">
         </div>
     </section>
 <!--  3 элемент container-->
-    <section class="reasons_item features">
+    <section class="reasons_item reasons_item_features">
         <h2 class="visually_hidden">Преимущества</h2>
-
         <ul class="features_list">
-
             <li class="feature_item">
                 <h3>Жильё</h3>
                 <!-- <img src="img/icon_home.svg" width="75" height="72" alt="Иконка домика"> -->
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-
             <li class="feature_item">
                 <h3>Еда</h3>
                 <!-- <img src="img/icon_mac.svg" width="75" height="72" alt="Иконка гамбургера"> -->
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-
             <li class="feature_item">
                 <h3>Сувениры</h3>
                 <!-- <img src="img/icon_present.svg" width="75" height="72" alt="Иконка подарока"> -->
                 <p>Не только китайского, но и местного производства!</p>
             </li>
-
         </ul>
     </section>
 <!--  4 элемент container-->
-    <section class="reasons_item bridge">
-        <div class="flex_text blue">
+    <section class="reasons_item reasons_item_bridge">
+        <div class="flex_text flex_text_blue">
             <h3>Мост дьявола</h3>
             <span>— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -90,24 +80,23 @@
         </div>
     </section>
   <!--  5 элемент container-->
-  <div class="reasons_item gray">
+  <div class="reasons_item">
     <section class="reasons_item_square">
-      <div class="flex_text gray">
+      <div class="flex_text_gray">
         <h3>Небольшая площадь</h3>
         <span>— №3 —</span>
         <p>Все достопримечательности находятся очень близко</p>
       </div>
     </section>
     <section class="reasons_item_road">
-      <div class="flex_text gray">
+      <div class="flex_text_gray">
         <h3>Красивая дорога</h3>
         <span>— №4 —</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
     </section>
-
     <section class="reasons_item_tourist">
-      <div class="flex_text gray">
+      <div class="flex_text_gray">
         <h3>Мало туристов</h3>
         <span>— №5 —</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
@@ -115,25 +104,26 @@
     </section>
   </div>
 
-       <!--  6 элемент container-->
-    <section class="search">
-      <div class="search_flex">
+    <!--  6 элемент container-->
+
+       <div class="search_flex">
         <h2 class="visually_hidden">Поиск</h2>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,</br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <!-- Здесь будет форма -->
-      </div>
+       </div>
+       <!-- Здесь будет форма -->
+      <section class="search">
       <div class="search_flex_form">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
             <h3>Поиск гостиницы в Седоне</h3>
-            <div class="data_arrival">
+            <div class="q data_arrival">
                 <lable>Дата заезда:<input type="text" name="data_arrival"></label>
             </div>
-            <div class="data_departure">
+            <div class="q data_departure">
                 <lable>Дата выезда:<input type="text" name="data_departure"></label>
             </div>
-            <div class="people">
+            <div class="q people">
                 <lable>Взрослые:<input type="text" name="adults"></label>
                 <div class="number_adults">
                     <button type="button" name="button_minus">Уменьшить</button>
@@ -158,20 +148,20 @@
 <footer class="main_footer container">
     <p class="footer_hashtag">#visitSedona</p>
     <div class="footer_social">
-        <a class="social_button" href="#">Твиттер
-            <img src="img/icon_tw.svg" width="17" height="15" alt="Седона в твиттер">
+        <a class="social_button social_button_tw" href="#"><sapn class="visually_hidden">Твиттер</sapn>
+            <!-- <img src="img/icon_tw.svg" width="17" height="15" alt="Седона в твиттер"> -->
         </a>
-        <a class="social_button" href="#">Фейсбук
-            <img src="img/icon_fb.svg" width="12" height="22" alt="Седона в фейсбук">
+        <a class="social_button social_button_fb" href="#"><sapn class="visually_hidden">Фейсбук</sapn>
+            <!-- <img src="img/icon_fb.svg" width="12" height="22" alt="Седона в фейсбук"> -->
         </a>
-        <a class="social_button" href="#">Ютуб
-            <img src="img/icon_youtube.svg" width="20" height="16" alt="Седона в ютуб">
+        <a class="social_button social_button_youtube" href="#"><sapn class="visually_hidden">Ютуб</sapn>
+            <!-- <img src="img/icon_youtube.svg" width="20" height="16" alt="Седона в ютуб"> -->
         </a>
     </div>
     <p class="footer_copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru">html academy
-            <img src="img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy">
+        <a class="html_academy" href="https://htmlacademy.ru"><sapn class="visually_hidden">html academy</sapn>
+            <!-- <img src="../img/icon_htmlacademy.svg" width="115" height="41" alt="icon_htmlacademy"> -->
         </a>
     </p>
 

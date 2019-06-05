@@ -1,11 +1,317 @@
-body {
+﻿body {
+    min-width: 1200px;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: #ffffff;
+    background-image:url("../img/background.jpg");
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h3{
+  font-size: 21px;
+}
+p{
+  font-size: 14px;
+  line-height: 24px;
+  color:#333333;
+}
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* меню */
+/* хедер уже является блоком, флексом */
+.main_header{
+/* стили для текста */
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: transparent;
+    margin-bottom: 506px;
+}
+.main_navigation{
+    display: flex;
+    flex-direction: column;
+/* выравнивание по побочной оси */
+    align-items: center;
+}
+.site_navigation{
+    position: relative;
+/*  обнуляем отступы, убтраем список 459px 353px*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+/*  делаем флексом по колоннам*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:white;
+    width: 1200px;
+}
+/* добавляем псевдоэлементом welcome */
+.site_navigation::after{
+    content: "";
+    position: absolute;
+
+    top:159px;
+    left:370px;
+    width: 459px;
+    height: 353px;
+
+    background-image: url("../img/welcome.svg");
+}
+/* для ссылок в навигации */
+.site_navigation a{
+    display: block;
+    padding: 16px 0;
+    vertical-align: middle;
+
+    color: #000000;
+    text-decoration: none;
+    width: 240px;
+  }
+  /* фокус */
+.site_navigation a:hover,
+.site_navigation a:focus{
+    color: #FFDAB9;
+}
+
+/*  контейнер для мейн*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/*  вступление о седоне*/
+
+.introduction_flex {
+/* задаем флекс по коллоннам*/
+    display: flex;
+    flex-direction: column;
+    /*  обнуляем отступы*/
+    margin: 0;
+    padding: 0;
+    /*  маска*/
+    background:  url("../img/polygon.svg") no-repeat;
+    background-position: top top;
+}
+.introduction_flex_block{
+    background-color: white;
+    /* тут косяк с размерами */
+    margin-top: 56px;
+}
+/*  стили для заголовка вступление*/
+.introduction_flex h3{
+    line-height: 1.24;
+
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+/*  стили для p вступление*/
+.introduction_flex p{
+    line-height: 1.86;
+    padding-bottom: 50px;
+}
+/*  разделили на блоки*/
+/*  для 1го пункта*/
+/*  флекс для всех причин*/
+.reasons_item{
   margin: 0;
   padding: 0;
 
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  для 3х пунктов*/
+.features_list{
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.flex_text{
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+
+/* голубой блок */
+.flex_text_blue{
+  background-color: #81b3d2;
+  padding-top:46px;
+}
+.flex_text_blue h3{
+  margin: 0;
+  color:white;
+  padding-bottom: 10px;
+}
+.flex_text_blue p{
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  line-height: 1.5;
+  color:white;
+}
+.flex_text_blue span{
+  color:white;
+}
+
+
+.flex_text_gray{
+  background-color: #eeeeee;
+  padding-top:50px;
+}
+.flex_text_gray h3{
+  margin: 0;
+  padding-bottom: 10px;
+}
+.flex_text_gray p{
+  font-size: 14px;
+  line-height: 1.5;
+  /*  что-то надо сделать с отступами*/
+  padding-bottom:70px;
+  padding-left:70px;
+  padding-right:70px;
+}
+/* перевернули фото с мостом */
+.reasons_item.reasons_item_bridge{
+  flex-direction: row-reverse;
+}
+
+.search_flex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #CCCCFF;
+}
+.search_flex h3{
+  margin: 0;
+  padding-top: 57px;
+
+  font-size: 30px;
+  line-height: 36px;
+}
+.search_flex p{
+  padding-bottom: 138px;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  background-image: url('../img/map.jpg');
+  padding-bottom:  593px;
+
+}
+
+
+.search_form{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+
+  background-color: white;
+  width: 568px;
+  padding: 0;
+  margin: 0;
+  /* padding-left:100px; */
+  margin-top: -100px;
+}
+.search_form h3{
+  margin: 0;
+  background-color: #766357;
+  color: white;
+  width: 568px;
+  padding: 30px 0;
+}
+.search_form p{
+color:black;
+/*  не выходит жтрный шрифт*/
+font-weight: 700;
+}
+.main_footer.container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+/*  как сделать прозрачано*/
+}
+
+.footer_hashtag{
+  font-size: 21px;
+  line-height: 1.24;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 132px;
+}
+.social_button {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  vertical-align: middle;
+  /* background-color: #81b3d2; */
+}
+.social_button_fb{
+  background: #81b3d2 url("../img/icon_fb.svg") no-repeat;
+  background-position: 17px 13px;
+}
+.social_button_tw{
+  background: #81b3d2 url("../img/icon_tw.svg") no-repeat;
+  background-position: 15px 14px;
+}
+.social_button_youtube{
+  background: #81b3d2 url("../img/icon_youtube.svg") no-repeat;
+  background-position: 13px 13px;
+}
+.footer_copyright{
+  padding-right: 101px;
+}
+.html_academy{
+  display: inline-block;
+   width: 115px;
+  height: 41px;
+  vertical-align: middle;
+  /* background-color: #81b3d2; */
+  background: #231f20 url("../img/icon_htmlacademy.svg") no-repeat;
+/*  как сделать цвет нормально*/
+  /* background-position: 13px 13px; */
 }
