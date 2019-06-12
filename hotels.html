@@ -22,7 +22,7 @@
               </a>
             </li>
               <li><a href="map.html">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
+              <li><a href="hotels.html" class="check">Гостиницы</a></li>
           </ul>
         </div>
       </nav>
@@ -30,7 +30,7 @@
 <main class="container">
 <section class="filter_hotels">
   <div>
-  <h3 class="filter_option">Инфракструктура</h3>
+  <h3 class="filter_option">Инфракструктура:</h3>
   <ul>
     <li class="filter_option">
         <input class="visually_hidden filter_input filter_input_checkbox"
@@ -100,66 +100,108 @@
         <!-- Здесь будет форма -->
     </section>
    <section class="sort">
+     <div class="sort_left">
       <h3>Найдено: 3</h3>
       <p>Сортировка:</p>
       <ul class="sort_list">
-          <li class="sort_item"><a href="#">По цене</a></li>
+          <li class="sort_item"><a href="#" class="chek">По цене</a></li>
           <li class="sort_item"><a href="#">По типу</a></li>
           <li class="sort_item"><a href="#">По рейтингу</a></li>
       </ul>
+    </div>
+      <div class="sort_right">
+        <!-- <div class="sort_ascending">
+          <button class="visually_hidden" type="button"><Сотрировка по возрастанию</button>
+        </div> -->
+
+          <p class="sort_ascending"><span class="visually_hidden">Сотрировка по возрастанию</span></p>
+          <p class="sort_descending"><span class="visually_hidden">Сотрировка по убыванию</span></p>
+          <!-- <span class="sort_descending visually_hidden">Сотрировка по убыванию</span> -->
+      </div>
    </section>
     <section class="catalog">
         <h2 class="visually_hidden">Список гостиницы</h2>
         <ul class="catalog_list">
             <li class="catalog_item">
-                <p class="catalog_item_image">
-                    <a href="#">
-                        <img src="img/hotel_1.jpg" width="135" height="90" alt="Amara Resort & Spa">
-                    </a>
-                </p>
-                <div class="catalog_item_text">
-                    <h3>Amara Resort & Spa</h3>
-                    <p class="catalog_item_title">Гостиница От 4000 Р.</p>
-                    <p class="catalog_item_a">
-                        <a class="button_info" href="#">Подробнее</a>
-                        <a class="button_book" href="#">Забронировать</a>
+                <div class="catalog_item_about">
+                    <p class="catalog_item_image">
+                        <a href="#">
+                            <img src="img/hotel_1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                        </a>
                     </p>
+                    <div class="catalog_item_text">
+                        <h3>Amara Resort & Spa</h3>
+                        <p class="catalog_item_title">Гостиница От 4000 Р.</p>
+                        <p>
+                            <a class="catalog_item_botton button_info" href="#">Подробнее</a>
+                            <a class="catalog_item_botton button_book" href="#">Забронировать</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="catalog_item_text_star">
-                    <span class="visually_hidden star_num">Колличество звезд</span>
-                    <span>Рейтинг:</span>
+                <div class="catalog_item_rating">
+                    <!-- <span class="star_num visually_hidden">Колличество звезд:4</span> -->
+                    <div>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                    </div>
+                    <p class="rating">Рейтинг: 8,5</p>
                 </div>
             </li>
             <li class="catalog_item">
-                <p class="catalog_item_image">
-                    <a href="#">
-                        <img src="img/hotel_2.jpg" width="135" height="90" alt="Desert Quail Inn">
-                    </a>
-                </p>
-                <div class="catalog_item_text">
-                    <h3>Desert Quail Inn</h3>
-                    <span class="catalog_item_title">Мотель От 3000 Р.</span>
-                    <p class="catalog_item_a">
-                        <a class="button_info" href="#">Подробнее</a>
-                        <a class="button_book" href="#">Забронировать</a>
+                <div class="catalog_item_about">
+                    <p class="catalog_item_image">
+                        <a href="#">
+                            <img src="img/hotel_2.jpg" width="135" height="90" alt="Desert Quail Inn">
+                        </a>
                     </p>
+                    <div class="catalog_item_text">
+                        <h3>Desert Quail Inn</h3>
+                        <p class="catalog_item_title">Мотель От 3000 Р.</p>
+                        <p >
+                            <a class="button_info" href="#">Подробнее</a>
+                            <a class="button_book" href="#">Забронировать</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="catalog_item_rating">
+                    <!-- <span class="star_num visually_hidden">Колличество звезд:3</span> -->
+                    <div>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                    </div>
+                    <p class="rating">Рейтинг: 8,9</p>
                 </div>
             </li>
+
             <li class="catalog_item">
-                <p class="catalog_item_image">
-                    <a href="#">
-                        <img src="img/hotel_3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-                    </a>
-                </p>
-                <div class="catalog_item_text">
-                    <h3>Villas at Poco Diablo</h3>
-                    <p class="catalog_item_title">Апартаменты От 2000 Р.</p>
-                    <p class="catalog_item_a">
-                        <a class="button_info" href="#">Подробнее</a>
-                        <a class="button_book" href="#">Забронировать</a>
+                <div class="catalog_item_about">
+                    <p class="catalog_item_image">
+                        <a href="#">
+                            <img src="img/hotel_3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                        </a>
                     </p>
+                    <div class="catalog_item_text">
+                        <h3>Villas at Poco Diablo</h3>
+                        <p>Апартаменты От 2000 Р.</p>
+                        <p>
+                            <a class="button_info" href="#">Подробнее</a>
+                            <a class="button_book" href="#">Забронировать</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="catalog_item_rating">
+                    <span class="star_num visually_hidden">Колличество звезд:2</span>
+                    <div>
+                        <button type="button" class="button_star"></button>
+                        <button type="button" class="button_star"></button>
+                    </div>
+                    <p class="rating">Рейтинг: 9,2</p>
                 </div>
             </li>
+
           </ul>
     </section>
 </main>
