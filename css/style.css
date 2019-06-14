@@ -662,8 +662,12 @@ input[type="radio"].visually_hidden {
 .catalog_item{
     display: flex;
     justify-content: space-between;
-    padding: 30px 72px;
+    margin: 0;
+    padding: 0 72px;
+    padding-top: 30px;
+    padding-bottom: 26px;
 }
+
 /*  правая часть*/
 .catalog_item_about{display: flex;}
 /*  для звезд чтоб прижались*/
@@ -672,19 +676,26 @@ input[type="radio"].visually_hidden {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    border: 1px solid red;
 
 }
 
 .rating{
     margin: 0;
     padding: 0;
-    padding: 3px 17px;
+    padding: 3px 14px;
 
     color:#666666;
     font-size: 14px;
     line-height: 21px;
 
     background-color: #f2f2f2;
+
+}
+.catalog_item_rating p{
+
+  margin-bottom: 4px;
+
 }
 /* чтобы текст выровнять */
 .catalog_item_text{
@@ -701,15 +712,21 @@ input[type="radio"].visually_hidden {
     padding: 0;
     font-size: 21px;
     line-height: 26px;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
+    margin-top: -6px;
+
 }
 .catalog_item_text p{
     margin: 0;
     padding: 0;
     font-size: 14px;
     line-height: 21px;
-}
 
+}
+.price{
+
+  border: 1px solid red;
+}
 .catalog_item_about p{
     margin: 0;
     padding: 0;
@@ -725,23 +742,32 @@ input[type="radio"].visually_hidden {
 }
 
 /*  отступ кнопки*/
+
 .catalog_item_text p:nth-of-type(2){
-  padding-top: 10px;
+  padding-top: 16px;
 }
 
 /* кнопки */
 .button_info{
+    margin: 0;
+    width: 110px;
     background-color: #81b3d2;
-    padding: 3px 17px;
+    padding: 0 17px;
+    padding-top: 4px;
+    padding-bottom: 5px;
     color:white;
     text-decoration: none;
+    margin-right: 2px;
 
 }
 .button_book{
     background-color: #766357;
+    width: 142px;
     color:white;
     text-decoration: none;
-    padding: 3px 17px;
+    padding: 0 17px;
+    padding-top: 4px;
+    padding-bottom: 5px;
 }
 
 .catalog_item{
@@ -788,16 +814,17 @@ input[type="radio"].visually_hidden {
 
     font-size: 21px;
     line-height: 26px;
-    margin-top: 31px;
+    margin-top: 29px;
     margin-left: 72px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 .sort p{
     margin: 0;
     padding: 0;
-    margin-top: 31px;
-    margin-left: 49px;
-
+    margin-top: 36px;
+    margin-left: 48px;
+    font-size: 12px;
+    line-height: 18px;
 }
 .sort_ascending{ position: relative;fill:yellow;}
 .sort_descending{ position: relative;}
@@ -825,10 +852,12 @@ input[type="radio"].visually_hidden {
 .sort_list{
     margin: 0;
     padding: 0;
-    margin-top: 31px;
+    margin-top: 36px;
     margin-left: 40px;
     display: flex;
     list-style: none;
+    font-size: 12px;
+    line-height: 18px;
 
     font-weight: bold;
 }
@@ -985,6 +1014,6 @@ input[type="radio"].visually_hidden {
 }
 
 .btn_transparent:hover {
-  color: #000000;
-  background: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
