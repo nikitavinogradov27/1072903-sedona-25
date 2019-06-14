@@ -10,115 +10,104 @@
   </head>
 <body class="hotels_body">
   <!-- хедер -->
-  <header class="main_header">
-      <nav class="main_navigation"> <!-- элемент  header container-->
+<header class="main_header">
+    <nav class="main_navigation"> <!-- элемент  header container-->
         <div class="container">
-          <ul class="site_navigation"> <!-- элемент  site_navigation container-->
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="foto_video.html">Фото и видео</a></li>
-              <li class="main_header_logo" >
-                <a href="#">
-                  <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона">
-              </a>
-            </li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li><a href="hotels.html" class="check">Гостиницы</a></li>
-          </ul>
+            <ul class="site_navigation"> <!-- элемент  site_navigation container-->
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="foto_video.html">Фото и видео</a></li>
+                <li class="main_header_logo" >
+                    <a href="#">
+                        <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона">
+                    </a>
+                </li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html" class="check">Гостиницы</a></li>
+            </ul>
         </div>
-      </nav>
-  </header>
+    </nav>
+</header>
 <main class="container">
-<section class="filter_hotels">
-  <div>
-  <h3 class="filter_option">Инфракструктура:</h3>
-  <ul>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Pool"
-        id="Pool"checked><label for="Pool">Бассейн</label>
-    </li>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Parking"
-        id="Parking"><label for="Parking">Парковка</label>
-    </li>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Wi-Fi"
-        id="Wi-Fi"><label for="Wi-Fi">Wi-Fi</label>
-    </li>
-
-  </ul>
-</div>
-<div>
-  <h3 class="filter_option">Тип жилья:</h3>
-  <ul>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Hotel"
-        id="Hotel"
-        checked><label for="Hotel">Гостиница</label>
-    </li>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Motel"
-        id="Motel"
-        checked><label for="Motel">Мотель</label>
-    </li>
-    <li class="filter_option">
-        <input class="visually_hidden filter_input filter_input_checkbox"
-        type="checkbox" name="Apartments"
-        id="Apartments"
-        checked><label for="Apartments">Апартаменты</label>
-    </li>
-  </ul>
-  </div>
-  <div class="filter_range">
-      <div class="filter_range_title">Стоимость в сутки (р):</div>
-      <div class="price_controls">
-        <label class="min_price">от <input type="text" name="min_price" value="0"></label>
-        <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
-      </div>
-      <div class="range_controls">
-        <div class="scale">
-          <div class="bar"></div>
+    <section class="filter_hotels">
+        <div class="filter_option_infrastructure">
+            <h3 class="filter_option">Инфракструктура:</h3>
+            <ul>
+                <li class="filter_option">
+                    <input class="visually_hidden filter_input filter_input_checkbox"
+                    type="checkbox" name="Pool"
+                    id="Pool"checked><label for="Pool">Бассейн</label>
+                </li>
+                <li class="filter_option">
+                    <input class="visually_hidden filter_input filter_input_checkbox"
+                    type="checkbox" name="Parking"
+                    id="Parking"><label for="Parking">Парковка</label>
+                </li>
+                <li class="filter_option">
+                    <input class="visually_hidden filter_input filter_input_checkbox"
+                    type="checkbox" name="Wi-Fi"
+                    id="Wi-Fi"><label for="Wi-Fi">Wi-Fi</label>
+                </li>
+            </ul>
         </div>
-        <div class="range_toggle range_toggle_min"></div>
-        <div class="range_toggle range_toggle_max"></div>
-      </div>
-      <button class="btn_transparent" type="submit">Показать</button>
-    </div>
-
-</section>
-
+        <div class="filter_option_type_of_hous">
+            <h3 class="filter_option">Тип жилья:</h3>
+            <ul>
+              <li class="filter_option">
+                  <input class="visually_hidden filter_input filter_input_checkbox"
+                  type="checkbox" name="Hotel"
+                  id="Hotel"
+                  checked><label for="Hotel">Гостиница</label>
+              </li>
+              <li class="filter_option">
+                  <input class="visually_hidden filter_input filter_input_checkbox"
+                  type="checkbox" name="Motel"
+                  id="Motel"
+                  checked><label for="Motel">Мотель</label>
+              </li>
+              <li class="filter_option">
+                  <input class="visually_hidden filter_input filter_input_checkbox"
+                  type="checkbox" name="Apartments"
+                  id="Apartments"
+                  checked><label for="Apartments">Апартаменты</label>
+              </li>
+            </ul>
+        </div>
+        <div class="filter_range">
+            <h3 class="filter_range_title">Стоимость в сутки (р):</h3>
+            <div class="price_controls">
+                <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+                <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
+            </div>
+            <div class="range_controls">
+                <div class="scale"></div>
+                <div class="bar"></div>
+                <div class="range_toggle range_toggle_min"></div>
+                <div class="range_toggle range_toggle_max"></div>
+            </div>
+            <button class="btn_transparent" type="submit">Показать</button>
+        </div>
+    </section>
   <!-- здесть будет сортировка -->
-
-
-  <h1 class="visually_hidden">Выбор гостиницы</h1>
+    <h1 class="visually_hidden">Выбор гостиницы</h1>
     <section class="filters">
         <h2 class="visually_hidden">Фильтр гостиницы</h2>
         <!-- Здесь будет форма -->
     </section>
-   <section class="sort">
-     <div class="sort_left">
-      <h3>Найдено: 3</h3>
-      <p>Сортировка:</p>
-      <ul class="sort_list">
-          <li class="sort_item"><a href="#" class="chek">По цене</a></li>
-          <li class="sort_item"><a href="#">По типу</a></li>
-          <li class="sort_item"><a href="#">По рейтингу</a></li>
-      </ul>
-    </div>
-      <div class="sort_right">
-        <!-- <div class="sort_ascending">
-          <button class="visually_hidden" type="button"><Сотрировка по возрастанию</button>
-        </div> -->
-
-          <p class="sort_ascending"><span class="visually_hidden">Сотрировка по возрастанию</span></p>
-          <p class="sort_descending"><span class="visually_hidden">Сотрировка по убыванию</span></p>
-          <!-- <span class="sort_descending visually_hidden">Сотрировка по убыванию</span> -->
-      </div>
-   </section>
+    <section class="sort">
+        <div class="sort_left">
+            <h3>Найдено: 3</h3>
+            <p>Сортировка:</p>
+            <ul class="sort_list">
+                <li class="sort_item"><a href="#" class="chek">По цене</a></li>
+                <li class="sort_item"><a href="#">По типу</a></li>
+                <li class="sort_item"><a href="#">По рейтингу</a></li>
+            </ul>
+        </div>
+        <div class="sort_right">
+            <p class="sort_ascending"><span class="visually_hidden">Сотрировка по возрастанию</span></p>
+            <p class="sort_descending"><span class="visually_hidden">Сотрировка по убыванию</span></p>
+        </div>
+    </section>
     <section class="catalog">
         <h2 class="visually_hidden">Список гостиницы</h2>
         <ul class="catalog_list">
@@ -139,7 +128,7 @@
                     </div>
                 </div>
                 <div class="catalog_item_rating">
-                    <!-- <span class="star_num visually_hidden">Колличество звезд:4</span> -->
+                    <span class="star_num visually_hidden">Колличество звезд:4</span>
                     <div>
                         <button type="button" class="button_star"></button>
                         <button type="button" class="button_star"></button>
@@ -166,7 +155,7 @@
                     </div>
                 </div>
                 <div class="catalog_item_rating">
-                    <!-- <span class="star_num visually_hidden">Колличество звезд:3</span> -->
+                    <span class="star_num visually_hidden">Колличество звезд:3</span>
                     <div>
                         <button type="button" class="button_star"></button>
                         <button type="button" class="button_star"></button>
@@ -175,7 +164,6 @@
                     <p class="rating">Рейтинг: 8,9</p>
                 </div>
             </li>
-
             <li class="catalog_item">
                 <div class="catalog_item_about">
                     <p class="catalog_item_image">
@@ -201,8 +189,7 @@
                     <p class="rating">Рейтинг: 9,2</p>
                 </div>
             </li>
-
-          </ul>
+        </ul>
     </section>
 </main>
 <footer class="main_footer container">
