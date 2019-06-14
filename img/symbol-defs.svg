@@ -1,0 +1,8 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-star" viewBox="0 0 34 32">
+<title>star</title>
+<path fill="#81b3d2" style="fill: var(--color1, #81b3d2)" d="M16.945 0l4.002 12.224h12.945l-10.473 7.552 4 12.224-10.473-7.554-10.473 7.554 4.002-12.224-10.473-7.552h12.947z"></path>
+</symbol>
+</defs>
+</svg>

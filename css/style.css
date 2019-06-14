@@ -676,9 +676,10 @@ input[type="radio"].visually_hidden {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
+
 
 .rating{
     margin: 0;
@@ -770,12 +771,8 @@ input[type="radio"].visually_hidden {
     padding-bottom: 5px;
 }
 
-.catalog_item{
-    border-bottom: 1px solid #c7c7c7;
-}
-.catalog{
-    margin-bottom: 120px;
-}
+.catalog_item{border-bottom: 1px solid #c7c7c7;}
+.catalog{margin-bottom: 120px;}
 
 .button_star{
     padding: 0;
@@ -787,18 +784,19 @@ input[type="radio"].visually_hidden {
     width: 18px;
     height: 17px;
     cursor: pointer;
-
-    background-image: url("../img/star.svg");
+    position: relative;
  }
-/* .catalog_item_text_star span{
 
-  background-image: url("../img/star.svg");
+  .icon_star{
+   position: absolute;
+   content:"";
+   top:-1px;
+   right:0px;
+   width: 18px;
+   height: 17px;
+   cursor: pointer;
 
-  background-repeat: repeat-x ;
-  background-position: 0 0;
-  width: 78px;
-} */
-
+ }
 .sort{
     display: flex;
     justify-content: space-between;
@@ -826,40 +824,45 @@ input[type="radio"].visually_hidden {
     font-size: 12px;
     line-height: 18px;
 }
-.sort_ascending{ position: relative;fill:yellow;}
+.sort_ascending{ position: relative;}
 .sort_descending{ position: relative;}
 .sort_right{  margin-right: 96px;}
 
-.sort_ascending::after{
+.icon_up{
     position: absolute;
     content:"";
-    right:-12px;
+    right:-23px;
+    top:3px;
     width:11px;
     height:10px;
-    background-image: url("../img/icon_down.svg");
-    fill:yellow;
+    fill:red;
+    margin-left: 10px;
+    fill:#81b3d2;
 }
-.sort_descending::after{
+.icon_down{
     position: absolute;
     content:"";
-    right:10px;
-
+    top:3px;
+    right:1px;
     width:11px;
     height:10px;
-    /* fill:yellow; */
-    background-image: url("../img/icon_up.svg");
+    fill:#cacaca;
 }
 .sort_list{
     margin: 0;
     padding: 0;
     margin-top: 36px;
     margin-left: 40px;
-    display: flex;
+
     list-style: none;
     font-size: 12px;
     line-height: 18px;
 
+
     font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
 }
 .sort_list li{
     margin-right: 33px;
