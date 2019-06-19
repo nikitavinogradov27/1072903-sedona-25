@@ -1,8 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-star" viewBox="0 0 34 32">
-<title>star</title>
-<path fill="#81b3d2" style="fill: var(--color1, #81b3d2)" d="M16.945 0l4.002 12.224h12.945l-10.473 7.552 4 12.224-10.473-7.554-10.473 7.554 4.002-12.224-10.473-7.552h12.947z"></path>
+<symbol id="icon-polygon" viewBox="0 0 674 32">
+<title>polygon</title>
+<path d="M0 32v-32l140.351 13.474v-13.474l196.491 32 196.491-32v13.474l140.351-13.474v32h-673.684z"></path>
 </symbol>
 </defs>
 </svg>
