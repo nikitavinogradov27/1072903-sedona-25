@@ -724,10 +724,6 @@ input[type="radio"].visually_hidden {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.hotels_body .main_footer {
-    background-color: rgba(255, 255, 255, 1);
-}
-
 .footer_hashtag {
     margin: 0;
     padding: 0;
@@ -1404,5 +1400,6 @@ input[type="radio"].visually_hidden {
 }
 
 .hotels_footer {
+    position: relative;
     margin-top: -120px;
 }
