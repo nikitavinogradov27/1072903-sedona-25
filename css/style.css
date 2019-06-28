@@ -942,7 +942,6 @@ input[type="radio"].visually_hidden {
     background-position: 0 0;
 }
 
-.filter_input:hover + label,
 .filter_input:focus + label {
     color: #81b3d2;
 }
